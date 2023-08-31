@@ -11,6 +11,8 @@
 		D59032042A9D314B00501133 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59032032A9D314B00501133 /* ContentView.swift */; };
 		D59032062A9D314D00501133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59032052A9D314D00501133 /* Assets.xcassets */; };
 		D59032092A9D314D00501133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59032082A9D314D00501133 /* Preview Assets.xcassets */; };
+		D59032112A9DCBCC00501133 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59032102A9DCBCC00501133 /* ApplicationMenu.swift */; };
+		D59032142AA08C6600501133 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59032132AA08C6600501133 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D59032052A9D314D00501133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59032082A9D314D00501133 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D590320A2A9D314D00501133 /* SwiftUIMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMacApp.entitlements; sourceTree = "<group>"; };
+		D59032102A9DCBCC00501133 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		D59032132AA08C6600501133 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,13 @@
 		D59032002A9D314B00501133 /* SwiftUIMacApp */ = {
 			isa = PBXGroup;
 			children = (
+				D59032122AA08C5700501133 /* Helpers */,
 				D59032012A9D314B00501133 /* SwiftUIMacAppApp.swift */,
 				D59032032A9D314B00501133 /* ContentView.swift */,
 				D59032052A9D314D00501133 /* Assets.xcassets */,
 				D590320A2A9D314D00501133 /* SwiftUIMacApp.entitlements */,
 				D59032072A9D314D00501133 /* Preview Content */,
+				D59032102A9DCBCC00501133 /* ApplicationMenu.swift */,
 			);
 			path = SwiftUIMacApp;
 			sourceTree = "<group>";
@@ -67,6 +73,14 @@
 				D59032082A9D314D00501133 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D59032122AA08C5700501133 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D59032132AA08C6600501133 /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59032042A9D314B00501133 /* ContentView.swift in Sources */,
+				D59032112A9DCBCC00501133 /* ApplicationMenu.swift in Sources */,
 				D59032022A9D314B00501133 /* SwiftUIMacAppApp.swift in Sources */,
+				D59032142AA08C6600501133 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

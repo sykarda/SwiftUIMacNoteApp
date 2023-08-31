@@ -9,9 +9,39 @@ import SwiftUI
 
 @main
 struct SwiftUIMacAppApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    static private(set) var instance: AppDelegate!
+    lazy var statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+
+    let menu = ApplicationMenu()
+
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        menu.delegate = self
+        AppDelegate.instance = self
+        statusBarItem.button?.title = getButtonTitle()
+        statusBarItem.menu = menu.createMenu()
+    }
+
+    private func getButtonTitle() -> String {
+        let notesCount = menu.getNumberOfNotes()
+        if notesCount > 0 {
+            return String(notesCount)
+        } else {
+            return "🤗"
+        }
+    }
+}
+
+extension AppDelegate: ApplicatonMenuDelegate {
+    func notesCountChanged() {
+        statusBarItem.button?.title = getButtonTitle()
     }
 }
