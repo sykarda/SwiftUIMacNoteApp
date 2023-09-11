@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D59031FE2A9D314B00501133 /* SwiftUIMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D59031FE2A9D314B00501133 /* Quicky Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quicky Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59032012A9D314B00501133 /* SwiftUIMacAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMacAppApp.swift; sourceTree = "<group>"; };
 		D59032032A9D314B00501133 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D59032052A9D314D00501133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		D59031FF2A9D314B00501133 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D59031FE2A9D314B00501133 /* SwiftUIMacApp.app */,
+				D59031FE2A9D314B00501133 /* Quicky Note.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D59031FD2A9D314B00501133 /* SwiftUIMacApp */ = {
+		D59031FD2A9D314B00501133 /* Quicky Note */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D590320D2A9D314D00501133 /* Build configuration list for PBXNativeTarget "SwiftUIMacApp" */;
+			buildConfigurationList = D590320D2A9D314D00501133 /* Build configuration list for PBXNativeTarget "Quicky Note" */;
 			buildPhases = (
 				D59031FA2A9D314B00501133 /* Sources */,
 				D59031FB2A9D314B00501133 /* Frameworks */,
@@ -97,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUIMacApp;
+			name = "Quicky Note";
 			productName = SwiftUIMacApp;
-			productReference = D59031FE2A9D314B00501133 /* SwiftUIMacApp.app */;
+			productReference = D59031FE2A9D314B00501133 /* Quicky Note.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D59031F92A9D314A00501133 /* Build configuration list for PBXProject "SwiftUIMacApp" */;
+			buildConfigurationList = D59031F92A9D314A00501133 /* Build configuration list for PBXProject "Quicky Note" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D59031FD2A9D314B00501133 /* SwiftUIMacApp */,
+				D59031FD2A9D314B00501133 /* Quicky Note */,
 			);
 		};
 /* End PBXProject section */
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D59031F92A9D314A00501133 /* Build configuration list for PBXProject "SwiftUIMacApp" */ = {
+		D59031F92A9D314A00501133 /* Build configuration list for PBXProject "Quicky Note" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D590320B2A9D314D00501133 /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D590320D2A9D314D00501133 /* Build configuration list for PBXNativeTarget "SwiftUIMacApp" */ = {
+		D590320D2A9D314D00501133 /* Build configuration list for PBXNativeTarget "Quicky Note" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D590320E2A9D314D00501133 /* Debug */,
