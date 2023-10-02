@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-protocol ContentViewDelegate {
-    func notesCountChanged()
-}
-
 struct ContentView: View {
 
+    @Binding public var barTitle: String
     @State var notesTextArray: [String] = []
     @State var newNoteText: String = ""
-    var delegate: ContentViewDelegate?
 
     @AppStorage("notes") var notes: Data = Data()
 
@@ -53,6 +49,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             notesTextArray = Helpers.dataToStringArray(data: notes) ?? []
+            setBarTitle()
         }
     }
 
@@ -71,17 +68,21 @@ struct ContentView: View {
 
     private func saveToStorage() {
         notes = Helpers.stringArrayToData(stringArray: notesTextArray) ?? Data()
-        delegate?.notesCountChanged()
+        setBarTitle()
     }
 
     func getNumberOfNotes() -> Int {
         let array = Helpers.dataToStringArray(data: notes) ?? []
         return array.count
     }
+
+    private func setBarTitle() {
+        barTitle = notesTextArray.isEmpty ? "🤗" : notesTextArray.count.description
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(barTitle: .constant(""))
     }
 }
