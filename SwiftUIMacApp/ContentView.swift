@@ -51,6 +51,7 @@ struct ContentView: View {
             notesTextArray = Helpers.dataToStringArray(data: notes) ?? []
             setBarTitle()
         }
+        .background(.thinMaterial)
     }
 
     private func addNewNote() {
