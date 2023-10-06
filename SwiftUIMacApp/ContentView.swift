@@ -44,6 +44,9 @@ struct ContentView: View {
                 }
             }
             Spacer()
+            Button("Quit") {
+                NSApplication.shared.terminate(self)
+            }
 
         }
         .padding()
